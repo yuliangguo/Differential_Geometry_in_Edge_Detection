@@ -9,6 +9,7 @@
 ***************************************************************************************/
 
 #include "edgemap.h"
+#define _USE_MATH_DEFINES
 #include <cmath>
 
 const double k_th = 1e-4;

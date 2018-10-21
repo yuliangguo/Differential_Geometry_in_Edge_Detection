@@ -76,14 +76,14 @@ void mexFunction( int nl, mxArray *pl[], int nr, const mxArray *pr[] )
     // create memory for output
     unsigned outh,outw, infow;
     curvelet_pro.get_output_size(outh,outw,output_type);
-    const int ds1[2] = {int(outh), int(outw)};
+    const mwSize ds1[2] = {mwSize(outh), mwSize(outw)};
     if(output_type==0)
         infow = 10;
     else if(output_type==1)
         infow = 1;
     else
         infow = 12;
-    const int ds2[2] = {int(outh), int(infow)};
+    const mwSize ds2[2] = {mwSize(outh), mwSize(infow)};
     if( nl>0 ) {
         arrayi chain;
         pl[0] = mxCreateNumericArray(2,ds1,mxINT32_CLASS, mxREAL);

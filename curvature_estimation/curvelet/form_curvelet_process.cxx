@@ -5,6 +5,7 @@
 #include <ctime>
 #include <vector>
 #include <deque>
+#define _USE_MATH_DEFINES
 #include <cmath>
 #include <algorithm>
 #include "form_curvelet_process.h"
